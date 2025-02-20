@@ -36,7 +36,7 @@ def update_database(section_sizes: dict) -> None:
     conn.close()
 
 def main():
-    elf_file = Path("../dummy-c-project/c_project2.elf")
+    elf_file = Path("../dummy-c-project/c_project4.elf")
     section_sizes = get_section_sizes(elf_file)
     update_database(section_sizes)
 
